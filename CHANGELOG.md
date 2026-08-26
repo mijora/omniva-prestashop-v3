@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+### Fixed
+- Fixed an error in registering international shipments when the product names of the order contain UTF-8 characters
+
 ## [3.0.1] - 2026-07-28
 ### Fixed
 - Fixed the module activation check to use the module ID instead of the hook
