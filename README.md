@@ -24,8 +24,9 @@ Omniva shipping module for PrestaShop that provides courier and parcel terminal 
 | 8.0.x      | Working    |             |
 | 8.1.x      | Working    |             |
 | 8.2.x      | Working    |             |
-| 9.0.x      | Working    |             |
+| 9.0.x      | Working    | 2026-11-04  |
 | 9.1.x      | Working    |             |
+| 9.2.x      | Not tested |             |
 
 | PHP  | Status     | Last tested |
 |------|------------|-------------|
@@ -34,4 +35,5 @@ Omniva shipping module for PrestaShop that provides courier and parcel terminal 
 | 8.1  | Working    |             |
 | 8.2  | Not tested |             |
 | 8.3  | Not tested |             |
-| 8.4  | Not tested |             |
+| 8.4  | Working    | 2026-11-04  |
+| 8.5  | Not tested |             |
