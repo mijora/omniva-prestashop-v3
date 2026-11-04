@@ -244,7 +244,7 @@ class OmnivaApiInternational extends OmnivaApi
     {
         $names = array_map(function ($prod) {
             $qty = $prod['quantity'] ?? 1;
-            $name = substr(trim($prod['name'] ?? 'Unknown product'), 0, 31);
+            $name = mb_substr(trim($prod['name'] ?? 'Unknown product'), 0, 31, 'UTF-8');
             return $qty . '×' . $name;
         }, $products_data);
 

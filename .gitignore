@@ -3,3 +3,4 @@
 **/*.log
 /omnivaltshipping/locations.json
 /omnivaltshipping/config*.xml
+/omnivaltshipping/vendor/.htaccess
