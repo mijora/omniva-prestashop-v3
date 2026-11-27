@@ -28,6 +28,8 @@ class OmnivaltShipping extends CarrierModule
     /** @var bool */
     private bool $_servicesInitialized = false;
 
+    const VERSION = '3.0.2';
+
     const CONTROLLER_OMNIVA_AJAX = 'AdminOmnivaAjax';
     const CONTROLLER_OMNIVA_ORDERS = 'AdminOmnivaOrders';
 
@@ -71,7 +73,7 @@ class OmnivaltShipping extends CarrierModule
     {
         $this->name = 'omnivaltshipping';
         $this->tab = 'shipping_logistics';
-        $this->version = '3.0.1';
+        $this->version = self::VERSION;
         $this->author = 'Mijora';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
