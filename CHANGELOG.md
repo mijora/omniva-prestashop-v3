@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Fixed
 - Fixed an error in registering international shipments when the product names of the order contain UTF-8 characters
+- Fixed the admin order page crash for orders that have no Omniva order record
 
 ## [3.0.1] - 2026-07-28
 ### Fixed
