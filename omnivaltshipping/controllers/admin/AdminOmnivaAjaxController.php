@@ -311,7 +311,7 @@ class AdminOmnivaAjaxController extends ModuleAdminController
 
         // Delete the empty placeholder record (created at order time) so that a fresh
         // record is always created — this ensures date_add reflects the actual label generation time.
-        $omnivaOrderHistory = OmnivaOrderHistory::getLatestOrderHistory($omnivaOrder->id);
+        $omnivaOrderHistory = OmnivaOrderHistory::getLatestOrderHistory((int) $order->id);
         if ($omnivaOrderHistory && !$omnivaOrderHistory->tracking_numbers) {
             $omnivaOrderHistory->delete();
         }

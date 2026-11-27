@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.0.2] - 2026-11-27
+### Fixed
+- Fixed an error in registering international shipments when the product names of the order contain UTF-8 characters
+- Fixed the admin order page crash for orders that have no Omniva order record
+
 ## [3.0.1] - 2026-07-28
 ### Fixed
 - Fixed the module activation check to use the module ID instead of the hook
@@ -11,7 +16,7 @@
 Initial release. This is a standalone module for PrestaShop 8.0+ (including PS 9), built based on the Omniva Shipping v2.3.5 module.
 
 ### Features
-- PrestaShop 8.0 and 9.x support
+- PrestaShop 8.x and 9.x support
 - Symfony/XLIFF translation system
 - Modern hooks: `displayCarrierExtraContent`, `displayAdminOrderMain`, `actionEmailSendBefore`
 - Automatic cleanup of obsolete files during upgrade
