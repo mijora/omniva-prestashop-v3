@@ -695,7 +695,7 @@ class OmnivaltShipping extends CarrierModule
             'downloadLabelsUrl' => $this->context->link->getAdminLink(self::CONTROLLER_OMNIVA_AJAX) . '&action=printLabels',
             'is_tracked' => !empty(json_decode($omnivaOrder->tracking_numbers ?: '[]')),
             'error' => $error_msg,
-            'orderHistory' => OmnivaOrderHistory::getHistoryByOrder($omnivaOrder->id),
+            'orderHistory' => OmnivaOrderHistory::getHistoryByOrder((int) $order->id),
             'omnivalt_methods' => json_encode(OmnivaCarrier::getAllMethodsData()),
             'omniva_js_path' => $this->_path . 'views/js/omniva-admin-order.js',
             'omnivalt_text' => json_encode([
